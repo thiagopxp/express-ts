@@ -1,0 +1,6 @@
+{
+    "env": {
+        "PORT": 4300,
+        "WEBSITE_ID": "dev"
+    }
+}

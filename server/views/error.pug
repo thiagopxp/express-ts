@@ -1,0 +1,15 @@
+extends layout
+
+block content
+
+  section.height-100.dark-bg
+    #particle-canvas(data-dot-color='#00c3da', data-line-color='#2f2f2f')
+    .centrize
+      .v-center
+        .container
+          .error-page
+            .title
+              h1.colored-text 404
+              h2 Oh no! There was an error.
+              h4 We couldn't find the page you were looking for.
+            a.btn.btn-color(href='/') Back to the home

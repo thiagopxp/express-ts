@@ -1,0 +1,35 @@
+{
+  "name": "express-ts-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run _server:run",
+    "build": "npm run _server:build",
+    "_server:run": "node node_modules/typescript/bin/tsc -p ./server && concurrently \"node node_modules/typescript/bin/tsc -w -p ./server\" \"node node_modules/nodemon/bin/nodemon dist/server/www.js\" ",
+    "_server:build": "tsc -p ./server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/body-parser": "^1.16.4",
+    "@types/compression": "0.0.33",
+    "@types/express": "^4.0.36",
+    "@types/node": "^8.0.3",
+    "body-parser": "^1.17.2",
+    "compression": "^1.6.2",
+    "express": "^4.15.3",
+    "less-middleware": "^2.2.0",
+    "nodemailer": "^4.0.1",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-rc.2",
+    "rxjs": "^5.4.1",
+    "typescript": "^2.3.4"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.11.0",
+    "tslint": "^5.4.3"
+  }
+}
